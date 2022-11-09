@@ -15,5 +15,11 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
+  },
+  viteFinal: (config, {configType}) => {
+    if (configType == 'PRODUCTION'){
+      config.base = '/Silver-Project-React/'
+    }
+    return config
   }
 }
