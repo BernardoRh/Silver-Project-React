@@ -1,0 +1,2 @@
+import{t as o}from"./index.bef85b42.js";/* empty css               */import"./iframe.ca6dc7ce.js";import"./es.map.constructor.7508c794.js";import"./es.number.to-fixed.c67f7a27.js";import"./index.6d872c9e.js";const i={actions:{argTypesRegex:"^on[A-Z].*"},controls:{matchers:{color:/(background|color)$/i,date:/Date$/}},darkMode:{dark:{...o.dark,appBg:"black"},light:{...o.normal,appBg:"white"}}};export{i as parameters};
+//# sourceMappingURL=preview.829713be.js.map
