@@ -1,7 +1,6 @@
 import '../styles/global.css';
 import { ReactNode, ButtonHTMLAttributes, useState } from 'react';
 import { Slot } from '@radix-ui/react-slot';
-import { Text } from './Text';
 import clsx from 'clsx';
 
 var Citys = {
@@ -55,7 +54,7 @@ export function CityButton({city, children, asChild, className, ...props}: CityB
          style={{background: backgroundCityColor}}
          onClick={() => CityButtonPressed()}
       >
-         <Text size='xlg' font='Albion'>{children}</Text>
+         {children}
       </Component>
    );
 }
@@ -78,3 +77,26 @@ export function pickCityColo(city: string){
          return ('#FFF');
    }
 }
+
+export function CityArray() {
+   let CitysArray = [];
+   if(Citys.Bridgewatch == true){
+      CitysArray.push('Bridgewatch');
+   }
+   if(Citys.Caerleon == true){
+      CitysArray.push('Caerleon');
+   }
+   if(Citys['Fort-Sterling'] == true){
+      CitysArray.push('Fort-Sterling');
+   }
+   if(Citys.Lymhurst == true){
+      CitysArray.push('Lymhurst');
+   }
+   if(Citys.Martlock == true){
+      CitysArray.push('Martlock');
+   }
+   if(Citys.Thetford == true){
+      CitysArray.push('Thetford');
+   }
+   return(CitysArray)
+} 
